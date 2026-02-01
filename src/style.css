@@ -1,0 +1,24 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.glass-card {
+    background: rgba(30, 30, 34, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle border */
+}
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    auto-rows: minmax(auto, max-content);
+}
+@media (min-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 280px); 
+    }
+    .col-span-2 { grid-column: span 2; }
+    .row-span-2 { grid-row: span 2; }
+}

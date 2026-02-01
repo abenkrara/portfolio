@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayub | Desarrollador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body class="antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center mix-blend-difference bg-black/20 backdrop-blur-md">
+        <a href="#" class="text-xl font-bold tracking-tighter hover:opacity-80 transition flex items-center gap-2">
+            <img src="assets/images/favicon.png" class="w-8 h-8 rounded-lg" alt="Logo">
+            AYUB.
+        </a>
+        <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+            <a href="#work" class="hover:text-white transition">Proyectos</a>
+            <a href="#about" class="hover:text-white transition">Sobre mí</a>
+            <a href="#contact" class="hover:text-white transition">Contacto</a>
+        </div>
+        <a href="mailto:abenkrara7@gmail.com" class="px-4 py-2 bg-white text-black text-sm font-semibold rounded-full hover:scale-105 transition transform">
+            Hablemos
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden">
+        <div class="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="text-center max-w-5xl mx-auto z-10 space-y-8">
+            <div class="relative mx-auto w-32 h-32 md:w-40 md:h-40 mb-6 group">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-full blur-lg opacity-50 group-hover:opacity-75 transition duration-500"></div>
+                <img src="assets/images/profile.jpg" alt="Profile" class="relative w-full h-full object-cover rounded-full border-2 border-white/10 shadow-2xl">
+            </div>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-xs text-gray-400 animate-fade-in border border-white/5">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Disponible para proyectos
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-none animate-slide-up" style="animation-delay: 0.1s;">
+                Creando <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-500">Experiencias Digitales.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed animate-slide-up" style="animation-delay: 0.3s;">
+                Desarrollador web creativo especializado en soluciones a medida para negocios ambiciosos.
+            </p>
+
+            <div class="pt-8 animate-slide-up" style="animation-delay: 0.5s;">
+                <a href="#work" class="group relative inline-flex items-center gap-2 px-8 py-4 bg-zinc-900 text-white rounded-2xl hover:bg-zinc-800 transition overflow-hidden ring-1 ring-white/10 shadow-lg shadow-zinc-900/50">
+                    <span class="relative z-10 font-medium">Ver Proyectos</span>
+                    <svg class="w-4 h-4 relative z-10 group-hover:translate-y-[2px] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid Section (Fixed Layout) -->
+    <section id="about" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 tracking-tight">Sobre mí & Skills</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-max md:auto-rows-[minmax(280px,auto)]">
+            
+            <!-- Card 1: Main Bio -->
+            <div class="glass-card rounded-3xl p-8 md:col-span-2 md:row-span-2 flex flex-col justify-between group hover:border-white/20 transition duration-500 relative overflow-hidden min-h-[400px]">
+                <div class="relative z-10">
+                    <div class="flex items-center gap-4 mb-6">
+                         <img src="assets/images/profile.jpg" class="w-16 h-16 rounded-2xl object-cover border border-white/10" alt="Avatar">
+                         <div>
+                             <h3 class="text-2xl font-bold">Ayub Benkrara</h3>
+                             <p class="text-gray-400 text-sm">Desarrollador Web</p>
+                         </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        Transformo ideas en realidad digital. Mi enfoque combina diseño visual impactante con arquitectura de software robusta. Me obsesiona el rendimiento y la experiencia de usuario.
+                    </p>
+                </div>
+                <div class="mt-8 flex gap-4 relative z-10">
+                   <div class="inline-flex gap-2">
+                       <a href="https://github.com/abenkrara" target="_blank" class="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                       <a href="https://www.linkedin.com/in/ayub-benkrara-nouni-04741b317/" target="_blank" class="p-2 bg-white/5 rounded-lg hover:bg-white/10 transition"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                   </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Services -->
+            <div class="glass-card rounded-3xl p-6 md:col-span-2 group hover:border-white/20 transition duration-500 flex flex-col justify-center">
+                <h3 class="text-lg font-semibold mb-4 text-gray-300 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Servicios
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-3">
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition">
+                        <span class="block text-gray-200 font-medium mb-1">Webs para Negocios</span>
+                        <span class="text-xs text-gray-500">Tu escaparate digital. Ideal para restaurantes o clínicas.</span>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition">
+                        <span class="block text-gray-200 font-medium mb-1">Renovación de Diseño</span>
+                        <span class="text-xs text-gray-500">Modernizo tu web antigua para que se vea perfecta.</span>
+                    </div>
+                    <div class="p-4 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition">
+                        <span class="block text-gray-200 font-medium mb-1">Mantenimiento</span>
+                        <span class="text-xs text-gray-500">Cambio fotos, precios o textos por ti.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Stack -->
+            <div class="glass-card rounded-3xl p-6 md:col-span-2 flex flex-col justify-center group hover:border-white/20 transition duration-500">
+                <h3 class="text-lg font-semibold mb-4 text-gray-300">Tecnologías</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">HTML5</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">Tailwind</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">JS (ES6+)</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">React</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">Supabase</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">Node.js</span>
+                    <span class="px-3 py-1 bg-zinc-800 rounded-lg text-xs font-medium text-gray-300 border border-zinc-700">Git</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="work" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 tracking-tight">Proyectos Selectos</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <a href="https://american-pizza-mario.vercel.app/" target="_blank" class="group relative rounded-3xl overflow-hidden glass-card cursor-pointer transform hover:-translate-y-2 transition duration-500 block">
+                <div class="aspect-video bg-zinc-900/50 relative overflow-hidden">
+                    <img src="assets/images/project-pizza.png" alt="American Pizza Mario" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"></div>
+                     <div class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 transform translate-y-2 group-hover:translate-y-0">
+                        Ver Web Live
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition">American Pizza Mario</h3>
+                            <p class="text-sm text-gray-500 mt-1">Sistemas de Reservas & Admin Panel</p>
+                        </div>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-xs border border-white/10 text-gray-300">2026</span>
+                    </div>
+                    <p class="text-gray-400 text-sm line-clamp-2">
+                        Web de reservas automática. Los clientes reservan mesa desde el móvil y el restaurante recibe el aviso al instante, sin llamadas ni líos.
+                    </p>
+                </div>
+            </a>
+
+            <div class="group relative rounded-3xl overflow-hidden glass-card cursor-pointer transform hover:-translate-y-2 transition duration-500">
+                <div class="aspect-video bg-zinc-900/50 relative overflow-hidden">
+                    <img src="assets/images/project-dental.jpg" alt="DentalCare Plus" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition">DentalCare Plus</h3>
+                            <p class="text-sm text-gray-500 mt-1">Clínica Dental Moderna</p>
+                        </div>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-xs border border-white/10 text-gray-300">2025</span>
+                    </div>
+                    <p class="text-gray-400 text-sm line-clamp-2">
+                        Sitio web para clínica. Los pacientes pueden ver los tratamientos, conocer al equipo y pedir cita online fácilmente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-3xl overflow-hidden glass-card cursor-pointer transform hover:-translate-y-2 transition duration-500">
+                <div class="aspect-video bg-zinc-900/50 relative overflow-hidden">
+                    <img src="assets/images/project-construction.jpg" alt="BuildTech Solutions" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-500"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition">BuildTech Solutions</h3>
+                            <p class="text-sm text-gray-500 mt-1">Constructora & Reformas</p>
+                        </div>
+                        <span class="px-3 py-1 bg-white/5 rounded-full text-xs border border-white/10 text-gray-300">2024</span>
+                    </div>
+                    <p class="text-gray-400 text-sm line-clamp-2">
+                        Catálogo digital de reformas. Una forma visual y profesional de enseñar trabajos anteriores y captar nuevos clientes.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="group relative rounded-3xl overflow-hidden glass-card cursor-pointer border-dashed border-2 border-zinc-800 hover:border-zinc-700 flex flex-col items-center justify-center p-10 text-center">
+                <h3 class="text-lg font-bold text-gray-300">¿Tu Proyecto Aquí?</h3>
+                <p class="text-sm text-gray-500 mt-2 max-w-xs">Estoy disponible para nuevos retos. Hablemos de tu idea.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-4 max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-8">
+            Vamos a trabajar <br> <span class="text-gray-500">juntos.</span>
+        </h2>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6 mt-12">
+            <!-- Email -->
+            <a href="mailto:abenkrara7@gmail.com" class="group flex items-center gap-4 px-8 py-4 glass-card rounded-2xl hover:bg-white/5 transition duration-300 border border-white/5 hover:border-white/10 w-full md:w-auto min-w-[300px] justify-center">
+                <div class="p-3 bg-zinc-900 rounded-xl group-hover:scale-110 transition">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-gray-500 uppercase font-semibold tracking-wider">Email</p>
+                    <p class="text-lg font-medium text-white group-hover:text-blue-400 transition">abenkrara7@gmail.com</p>
+                </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:+34632401075" class="group flex items-center gap-4 px-8 py-4 glass-card rounded-2xl hover:bg-white/5 transition duration-300 border border-white/5 hover:border-white/10 w-full md:w-auto min-w-[300px] justify-center">
+                <div class="p-3 bg-zinc-900 rounded-xl group-hover:scale-110 transition">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-gray-500 uppercase font-semibold tracking-wider">Teléfono</p>
+                    <p class="text-lg font-medium text-white group-hover:text-green-400 transition">+34 632 40 10 75</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 mt-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="text-gray-500 text-sm">© 2026 Ayub. Valencia, España.</p>
+                <p class="text-xs text-gray-600 mt-1">Creado con pasión & precisión.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://github.com/abenkrara" target="_blank" class="text-gray-400 hover:text-white transition">Github</a>
+                <a href="https://www.linkedin.com/in/ayub-benkrara-nouni-04741b317/" target="_blank" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
