@@ -1,4 +1,9 @@
-﻿@tailwind base;
+﻿
+body { 
+    background-color: #050505; 
+    color: #ffffff; 
+}
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -21,4 +26,16 @@
     }
     .col-span-2 { grid-column: span 2; }
     .row-span-2 { grid-row: span 2; }
+}
+
+
+/* Project Card Responsiveness */
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+    .aspect-video {
+        aspect-ratio: 4 / 3;
+    }
 }
